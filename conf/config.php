@@ -16,6 +16,11 @@
    even if you are using session configuration.
    See http://kcfinder.sunhater.com/install for setting descriptions */
 
+$customConfig = __DIR__ . '/../../../kcfinder-config.php';
+if (is_file($customConfig)) {
+	return require_once $customConfig;
+}
+   
 return array(
 
 
